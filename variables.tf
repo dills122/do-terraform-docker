@@ -6,17 +6,17 @@ variable "ssh_key_fingerprint" {
 }
 variable "region" {
   description = "DigitalOcean region"
-  default = "nyc3"
+  default     = "nyc3"
 }
 variable "droplet_image" {
   description = "DigitalOcean droplet image name"
-  default = "docker-20-04"
+  default     = "docker-20-04"
 }
 variable "droplet_size" {
   description = "Droplet size for server"
-  default = "s-1vcpu-2gb"
+  default     = "s-1vcpu-2gb"
 }
 variable "ssh_public_key" {
   description = "Local public ssh key"
-  default = "~/.ssh/do_id_rsa.pub"
+  default     = "~/.ssh/do_id_rsa.pub"
 }
