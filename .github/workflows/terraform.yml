@@ -27,7 +27,6 @@ jobs:
           path: /
   plan:
     runs-on: ubuntu-latest
-    id: plan
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -35,6 +34,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: terraform plan
+        id: plan
         uses: dflook/terraform-plan@v1
         with:
           var_file: testing.tfvars
