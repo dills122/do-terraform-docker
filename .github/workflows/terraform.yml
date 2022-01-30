@@ -36,5 +36,4 @@ jobs:
       - name: terraform plan
         uses: dflook/terraform-plan@v1
         with:
-          path: /
           var_file: testing.tfvars
