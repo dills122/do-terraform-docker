@@ -22,4 +22,5 @@ variable "ssh_public_key_path" {
 }
 variable "ssh_public_key" {
   description = "Local public ssh key"
+  default     = "default"
 }
