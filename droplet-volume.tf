@@ -2,7 +2,7 @@ data "template_file" "userdata" {
   template = file("${path.module}/app.yaml")
 
   vars = {
-    ssh_public_key = file(var.ssh_public_key)
+    pub_key = var.ssh_public_key != "" ? var.ssh_public_key : file(var.ssh_public_key_path)
   }
 }
 
