@@ -21,7 +21,7 @@ users:
     groups: users, admin
     lock_passwd: false
     ssh-authorized-keys:
-      - ${ssh_public_key}
+      - ${pub_key}
 
 runcmd:
   - /usr/bin/sleep 10
